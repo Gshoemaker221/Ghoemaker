@@ -22,6 +22,9 @@ body{
     padding: 10px;
     display: none;
     cursor: pointer;
+    z-index: 1000px;
+    right: 10px;
+    top: 10px;
     background: linear-gradient(to right, black, grey, white, grey, black);
     background: -o-linear-gradient(right, black, grey, white, grey, black);
     background: -moz-linear-gradient(right, black, grey, white, grey, black);
