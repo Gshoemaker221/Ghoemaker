@@ -11,9 +11,9 @@ body{
     margin-top: 30px;
 }
 
-/* #menu_toggle{
+#menu_toggle{
     display: none;
-} */
+}
 .menu_icon{
     width: 90%;
     margin: 10px auto;
