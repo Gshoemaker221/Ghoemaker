@@ -396,9 +396,9 @@ select{
         font-size: 16px;
     }
 
-    .menu_icon{
+/*     .menu_icon{
         display: block;
-    }
+    } */
 
     nav {
         display: none;
