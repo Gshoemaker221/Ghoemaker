@@ -5,6 +5,8 @@ backend:
 media_folder: "images/uploads"   # où seront stockées les images dans le dépôt
 public_folder: "/images/uploads" # chemin d’accès public aux images
 
+site_url: https://willowy-souffle-4bcddb.netlify.app
+
 collections:
   - name: "articles"      # identifiant interne
     label: "Articles"     # titre affiché dans le CMS
