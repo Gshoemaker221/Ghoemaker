@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main # ou master, selon ta branche par défaut
+
+media_folder: "images/uploads"   # où seront stockées les images dans le dépôt
+public_folder: "/images/uploads" # chemin d’accès public aux images
+
+collections:
+  - name: "articles"      # identifiant interne
+    label: "Articles"     # titre affiché dans le CMS
+    folder: "articles"    # dossier où seront créés les fichiers .md
+    create: true          # autoriser la création de nouveaux fichiers
+    slug: "{{slug}}"      # nom de fichier basé sur le titre
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
