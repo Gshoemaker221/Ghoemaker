@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Panier</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/STYLE.css">
+    </head>
+    <body>
+        
+        <div id="header"></div>
+
+        <main>
+            <h2>Votre Panier</h2><br><br>
+            <form id="commande-form">
+                <fieldset id="section1">
+                    <div class="infos_client">
+                        <legend>Informations sur le client</legend><br>
+                        <label for="Prenom">Quel est votre prénom ? </label><br>
+                        <input type="text" id="Prenom" name="Prenom" placeholder="Entrez votre prénom..." required><br><br>
+                        <label for="Nom">Quel est votre nom ? </label><br>
+                        <input type="text" id="Nom" name="Nom" placeholder="Entrez votre nom..." required><br><br>
+                        <label for="Numero"> Quel est votre numéro de téléphone ? </label><br>
+                        <input type="number" id="Numero" name="Numero" placeholder="Entrez votre numéro..."><br><br>
+                            <!-- Localisation -->
+
+                        <label for="adresse"> Quel est votre adresse de livraison ?    </label><br>
+                        <input type="text" id="adresse" name="adresse" placeholder="cliquez sur partager ma position..." readonly><br>
+                        <button class="loca" type="button" onclick="getlocalisation()">📍Partager ma position</button><br><br>
+                    </div>
+                </fieldset>
+                <fieldset id="section2"><br><br>
+                    <legend>Articles</legend><br>
+                    <button id="clear-cart"><strong></strong>Vider le Panier</strong></button><br><br>
+                    <ul id="cart-items"></ul>
+                </fieldset>
+                <div class="final_panier">
+                    <p id="total">TOTAL: <strong><span id="total-price">0</span> FCFA</strong></p>
+                    <button id="checkout" type="submit">Commander</button>
+                </div>
+            </form><br><br><br><br>
+        </main>
+        <br><br><br>
+        <div id="footer"></div>
+        <script src="js/include.js"></script>        
+        <script src="js/formulaire.js" defer></script>
+        <script src="js/cart.js"></script>
+        <script src="js/adresse_script.js"></script>
+    </body>
+</html>
