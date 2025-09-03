@@ -1,0 +1,892 @@
+
+/* Page d'acceuil */
+
+
+body{
+    background-color: beige;
+    font-size: 16px;
+    width: 95%;
+    margin: 10px auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* barre de navigation */
+
+    #menu_toggle{
+        display: none;
+    }
+
+    .barre{
+        width: 95%;
+        height: 70px;
+        margin: 30px auto;
+        margin-top: 150px;
+        background-color: #0E2A47;
+        border: 4px ridge gold;
+        border-radius: 15px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        text-decoration: none;
+        position: absolute;
+        right: 110px;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav ul li{
+        list-style: none;
+        padding: 10px;
+    }
+    nav a{
+        text-decoration: none;
+        color: beige;
+        text-shadow: 2px 2px 2px blue;
+        font-size: 18px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+    } 
+    nav ul li a{
+        color: beige;
+    }
+
+    .menu1:hover, .contact1:hover, .catégories1:hover, .info1:hover{
+        border: 3px solid black;
+        border-radius: 10px;
+    }
+
+    .menu1:hover{
+        border-top: 2px solid green;
+        background-color: rgb(92, 237, 104);
+        transform: scale(1.0125);
+    }
+    .contact1:hover{
+        border-top: 2px solid yellow;
+        background-color: rgb(201, 239, 143);
+        transform: scale(1.0125);
+    }
+    .catégories1:hover{
+        border-top: 2px solid rgb(113, 5, 5);
+        background-color: rgb(247, 78, 78);
+        transform: scale(1.0125);
+    }
+    .info1:hover{
+        border-top: 2px solid purple;
+        background-color: plum;
+        transform: scale(1.0125);
+    }
+    header{
+        background: url("../Medias/logo_arriere_plan.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 3px solid #0E2A47;
+        border-radius: 15px;
+    }
+    .img_logo1{
+        border: 3px ridge gold;
+        border-radius: 150px;
+        height: 100px;
+        width: 100px;
+        box-shadow: 0 0 30px white;
+        float: left;
+        margin: 30px 75px;
+    }
+    .img_logo2{
+        border: 2px ridge gold;
+        border-radius: 150px;
+        height: 100px;
+        width: 100px;
+        box-shadow: 0 0 30px white;
+        float: right;
+        margin: 30px 75px;
+    }
+
+
+    h1{
+    position: absolute;
+    font-family: Algerian;
+    color: gold;
+    text-shadow:2px 2px 4px black;
+    font-size: 26px;
+    left: 125px;
+    }
+
+    h2{
+        text-align: center;
+        border: 5px double black;
+        margin: 25px 30%;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+/* Fin de la partie Navigation */
+
+
+
+/* Page d'acceuil */
+
+            /* Welcomming */
+
+    .welcome{
+    margin: 10px auto;
+    width: 95%;
+    border: 4px solid black;
+    border-radius: 25px;
+    background: linear-gradient(-30deg, rgb(236, 67, 95), yellow, green);
+    }
+    .welcome_img{
+        height: 500px;
+        position: relative;
+        height: 700px;
+
+    }
+    .welcome_img img.show{
+        position: absolute;
+        object-fit: cover;
+        opacity: 0;
+        width: 90%;
+        height: 100%;
+        border: 4px solid gold;
+        border-radius: 50px;
+        top: 0px;
+        left: 30px;
+        animation: diapo 20s infinite;
+    }
+    .n_slogan{
+        font-size: 30px;
+        font-style: italic;
+        text-shadow: 2px 2px 3px green;
+    }   
+
+    .welcome_img img:nth-child(1){animation-delay: 0s;}
+    .welcome_img img:nth-child(2){animation-delay: 5s;}
+    .welcome_img img:nth-child(3){animation-delay: 10s;}
+    .welcome_img img:nth-child(4){animation-delay: 15s;}
+
+    @keyframes diapo{
+        0% { opacity: 0;}
+        5% {opacity: 1;}
+        25% { opacity: 1;}
+        30% { opacity: 0;}
+        100% { opacity: 0;}
+    }
+            /* Fin partie Show */
+
+
+            /* partie Fournisseurs */
+
+.fournisseurs{
+    width: 90%;
+    margin: 5px auto;
+    padding: 15px;
+    border: 5px ridge black;
+    border-radius: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.fournisseur{
+    display: inline-block;
+    width: 48%;
+    height: 1000px;
+    margin: 30px 15px;
+    border: 4px dotted purple;
+    border-radius: 15px;
+}
+
+.fournisseur img{
+    display: block;
+    width: 275px;
+    height: 275px;
+    margin: 10px auto;
+    border: 4px ridge black;
+    border-radius: 15px;
+}
+.fournisseur a:hover{
+    transform: scale(0.8);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+#spc{
+    width: 75%;
+    border: 4px ridge black;
+    border-radius: 10px;
+    color: #0E2A47;
+    text-shadow: 2px 2px 2px gold;
+    margin: 50px auto;
+}
+/* Fin de la partie accueil */
+
+
+/* partie Modèles */
+
+    .pacceuil{
+    background-color: beige;  
+    margin: 30px auto; 
+    width: 96%;
+    box-shadow: 0px 0px 15px  inset black;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    }
+    .elements{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img-acceuil{
+        border: 3px solid black;
+        background-color:rgba(128, 128, 128, 0.637);
+        border-radius: 8px;
+        box-shadow: 0 0 10px inset black;
+        margin: 5px;
+        padding: 10px;
+        width: 30%;
+        height: 250px;
+        transition: transform 0.2s; 
+        display: flex;
+    }
+    .deuxieme_part{
+        font-size: smaller;
+        height: 100%;
+        margin-top: 20px;
+
+    }
+    .deuxieme_part input, select{
+        width: 100%;
+    }
+
+    .img-acceuil:hover{
+        transform: scale(1.0125);
+    }
+
+    .img-acceuil img{
+        width: 50%;
+        border-radius: 8px; 
+        margin: 10px;
+        border: 2px solid black;
+    }
+    .add-to-cart{
+    font-size: 12px;
+    }
+
+/* Fin de la partie Modèles */
+
+
+/* Titres et paragraphes spécifiques */
+
+
+
+h3{
+    font-size: 30px;
+    color: gold;
+    text-shadow: 0 0 5px black;
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+h4{
+    font-size: 14px;
+    color: black;
+
+}
+
+h5{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h6{
+    font-size: 26px;
+    margin: 8px auto;
+    color: chocolate;
+}
+
+p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+p1{
+    color: magenta;
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+}
+
+
+p2{
+    font-size: 24px;
+}
+
+/* a propos style */
+
+    .à-propos{
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 100%;
+        margin: 3px;
+        padding: 25px;
+        border: 4px solid green;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+
+    }
+    .à-propos-modification{
+        max-width: 95%;
+        margin:  auto;
+        padding: 5px;
+        border: 4px solid black;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+    }
+
+/* Bas de page */
+
+    .infos{
+        background-color: #0E2A47;
+        color: beige;
+        padding: 10px;
+        border: 4px solid black;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        box-shadow: 2px 2px 2px inset black;
+    }
+    .infos img{
+        display: inline;
+        width: 50px;
+        height: 50px;
+        border: 3px ridge gold;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .infos a{
+        color: gold;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+    .contact{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    footer{
+        text-align: center;
+        background-color: gold;
+        color: darkblue;
+        padding: 8PX 100px;
+
+    }
+
+/* Fin de la partie Bas de Page */
+
+
+/* Fournisseurs style */
+
+
+
+/* .pro_catés{
+    display: block;
+    width: 80%;
+    height: 450PX;
+    margin: 5% auto;
+    padding: 25px;
+    border:5px ridge black;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 15px;
+}
+
+.pro_catés img{
+    display: block;
+    width: 50%;
+    height: 100%;
+    border: 2px solid black;
+    box-shadow: 2px 2px 4px purple;
+    border-radius: 10px;
+    float: left;
+    margin: 10px ;
+}
+
+.pro_catés .pointure,.pro_catés .couleur{
+    width: 45%;
+    padding: 15PX 0;
+} */
+
+
+/* Catégorie */
+
+
+    .caté{
+        display: block;
+        width: 95%;
+        border: 2px dotted #0E2A47;
+        border-radius: 15px;
+        box-shadow: 0 0 20px #0E2A47;
+        margin: 20px auto;
+        padding: 15px;
+        background-color: beige;
+    }
+    .caté ul li{
+        list-style: none;
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: gold;
+        margin: 0 auto;
+    }
+
+/* Fin de la partie Catégorie */
+
+div a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+button{
+    background-color: purple;
+    border: 3px ridge black;
+    border-radius: 8px;
+    font-size: 18px;
+    color: black;
+}
+
+button:hover{
+    border: 5px ridge green;
+    background-color: greenyellow;
+}
+
+/* Panier */
+
+    #commande-form{
+        max-width: 85%;
+        margin: 5px auto;
+    }
+
+    #cart-items {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #cart-items li {
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: antiquewhite;
+        margin: 20px 10px;
+        padding: 25px;
+        border-radius: 25px;
+        box-shadow: 0 0 10px purple;
+        border: 4px ridge gold;
+    }
+
+
+    #total{
+        float: left;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        background-color: aqua;
+        border: 4px ridge black;
+        width: 35%;
+        border-radius: 10px;
+        margin: 15px;
+    }
+
+    #checkout{
+        font-size: 20px;
+        font-weight: bold;
+        background-color: aqua;
+        border: 4px ridge black;
+        border-radius: 10px;
+        float: right;
+        width: 35%;
+        margin: 15px;
+    }
+
+    #checkout:hover{
+        border: 6px ridge green;
+        background-color: aquamarine;
+    }
+
+    #section1, #section2{
+        color: skyblue;
+        background-color: #0E2A47;
+        width: 98%;
+        font-size: 18px;
+        text-align: start;
+        border: 4px double gold;
+        border-radius: 10px;
+        margin: 25px auto;
+        box-shadow: 0 0 15px rgb(76, 76, 37);
+    }
+
+    #clear-cart{
+        float: right;
+        background-color: red;
+        color: black;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    #clear-cart:hover{
+        color: black;
+        background-color: rgba(255, 0, 0, 0.55);
+        border: 6px ridge black;
+    }
+    input{
+        background-color: beige;
+        font-size: 18px;
+        border-radius: 6px;
+        text-align: center;
+        width: 100%;
+        margin: 5px auto;
+    }
+    select{
+        background-color: antiquewhite;
+    }
+    .infos_client{
+        width: 60%;
+        margin: 10px auto;
+    }
+    .loca{
+        font-size: smaller;
+        margin: 8px;
+        background-color: gold;
+        border: 2px solid green;
+    }
+    .final_panier{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+
+/* =================== RESPONSIVE POUR MOBILE =================== */
+
+@media screen and (max-width: 1025px){
+    .barre{
+        align-items: center;
+        height: 70px;
+    }
+    h1{
+        font-size: 16px;
+        left: 75px;
+        margin-top: 25px;
+        position: absolute;
+    }
+    h2{
+        font-size: 19px;
+        padding: 4px;
+    }
+    nav{
+        position: absolute;
+        right: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .img-acceuil{
+        width: 40%;
+        height: 225px;
+    }
+    ;.img-acceuil img{
+        width: 50%;
+        
+    }
+    .infos_client{
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 590px) {
+
+
+/* Section de navigation */
+
+    body {
+        width: 100%;
+        margin: 10px auto;
+        font-size: 16px;
+    }
+
+
+    .barre{
+        width: 95%;
+        height: 50px;
+       
+    }
+    .menu_icon{
+        width: 10%;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    
+    .menu_icon span{
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: beige;
+        border-radius: 5px;
+        margin: 4px 15px;
+        float: left;
+    }
+
+    #menu_toggle:checked + .menu_icon + nav{
+        display: flex;
+    }
+    nav {
+        position: absolute;
+        display: none;
+        height: auto;
+        padding: 5px;
+        width: 90%;
+        left: 10px;
+        background-color: rgba(240, 248, 255, 0.414);
+        backdrop-filter: blur(10px);
+        border: 3px ridge black;
+        border-radius: 10px;
+        z-index: 100;
+    }
+
+    nav ul {
+        display: block; 
+        text-align: center;
+    }
+
+    nav li {
+        float: none;
+        display: block;
+        margin-bottom: 8px;
+    } 
+    
+    nav ul li a {
+        color: #0E2A47;
+        text-shadow: 0 0 3px gold;
+        padding: 10px;
+        font-size: 12px;
+    } 
+    .img_logo1, .img_logo2 {
+        width: 20%;
+        height: auto;
+        border: 3px ridge gold;
+        margin: 15px;
+    }
+
+    .img_logo1{
+        float: left;
+    }
+
+    .img_logo2{
+        float: right;
+    }
+
+    h1 {
+        margin-top: 15px;
+        left: 100px;
+        font-size: 20px;
+    }
+
+    h2 {
+        margin: 40px 20%;
+    }
+
+/* fin de la partie navigation */
+
+/* partie footer */
+
+    .infos{
+        margin: 0 auto;
+        font-size: 10px;
+    }
+    .infos img{
+        margin: 2px auto;
+        width: 25px;
+        height: 25px;
+        border: 2px ridge gold;
+        border-radius: 10px;
+    }
+    footer{
+        font-size: 10px;
+        margin: 0 auto;
+    }
+    .contact{
+        width: 100%;
+    }
+
+/* Fin de la partie footer */
+
+/* Debut partie accueil */
+
+
+    .welcome{
+        max-height: 400px;
+        overflow-y: hidden;
+    }
+    .welcome_img img.show{
+        height: 275px;
+        margin: 0 auto;
+        left: 15px;
+    }
+    .n_slogan{
+        font-size: 16px;
+    }
+
+    .fournisseurs{
+        height: 400px;
+
+    }
+    .fournisseur{
+        width: 95%;
+        height: 395px;
+        margin: 0 auto;
+
+    }
+    .fournisseur img{
+    height: 100px;
+    width: 100px;
+    }
+    h4{
+        margin: 8px auto;
+    }
+
+/* Fin partie accueil */
+
+/* La partie Modèle */
+
+    .img-acceuil {
+        width: 90%;
+        /* height: auto; */
+        margin: 10px auto;
+        padding: 15px;
+        /* aspect-ratio: 1/0.8; */
+    }
+
+    .img-acceuil img {
+        margin: 5px;
+        width: 60%;
+        aspect-ratio: 1/1;
+        border: 2px dotted black;
+    }
+
+    .img-acceuil button{
+        max-width: 50%;
+    }
+    .img-acceuil input, .img-acceuil select{
+        max-width: 85%;
+    }
+
+    .pacceuil {
+        width: 98%;
+        padding: 10px;
+        margin: 5px auto;
+    }
+    .add-to-cart{
+        font-size: 8px;
+        width: 100%;
+    }
+
+/* Fin de la partie modèle */
+
+/* La partie gggggg */
+
+    /* .pro_catés{
+    display: block;
+    width: 80%;
+    height: 95%;
+    margin: 10% auto;
+    padding: 25px;
+    border:5px ridge black;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 15px;
+    }
+
+.pro_catés img{
+    display: block;
+    width: 50%;
+    height: 35vh;
+    border: 2px solid black;
+    box-shadow: 2px 2px 4px purple;
+    border-radius: 10px;
+    float: left;
+    margin: 10px ;
+}
+
+.pro_catés .pointure,.pro_catés .couleur{
+    width: 38%;
+    padding: 3px 0px;
+
+} */
+
+/* Fin de la partie ggg */
+
+    
+
+    p, .à-propos, .à-propos-modification {
+        font-size: 16px;
+        padding: 10px;
+        width: 98%;
+
+    }
+
+
+/* Partie panier */   
+
+    #cart-items li, #total, #checkout, #clear-cart {
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    #total{
+        padding: 10px;
+        width: 40%;
+        float: left;
+        font-size: 12px;
+    }
+
+    #checkout{
+        padding: 10px;
+        float: right;
+        width: 40%;
+        font-size: smaller;
+    }
+
+    #clear-cart{
+        width: 35%;
+        float: right;
+        font-size: 10px;
+    }
+
+    #cart-items li {
+        display: block;
+        margin: 20px auto;
+        font-size: smaller;
+    }
+
+    #cart-items li button{
+        position: right;
+    }
+
+    textarea, input, select {
+        width: 80%;
+        font-size: 14px;
+        margin: 4px auto;
+    }
+    .infos_client{
+        width: 85%;
+    }
+/* Fin de la partie Panier */
+
+}
