@@ -9,7 +9,7 @@ function getlocalisation() {
 function showPosition(position) {
     let lat = position.coords.latitude;
     let lon = position.coords.longitude;
-    let googlemaplink = 'https://www.google.com/maps?q=${lat},${lon}';
+    let googlemaplink = "https://www.google.com/maps?q=" +lat+ ","+lon;
     alert("coordonnées: "+googlemaplink);
 
     document.getElementById("adresse").value = googlemaplink;
@@ -25,4 +25,5 @@ function showError(error) {
         default:
             alert("Erreur inconnue");
     }
+
 }
